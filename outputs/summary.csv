@@ -1,0 +1,13 @@
+metric,value
+tasks,32
+complete,22
+in_progress,4
+not_started,6
+completion_pct,0.6875
+done_late,6
+open_overdue,2
+blocked,4
+total_days_late,8
+on_time_completion_pct,0.7273
+status_as_of_workday,4
+formula_errors,0

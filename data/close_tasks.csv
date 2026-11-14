@@ -1,0 +1,33 @@
+task_id,area,task,owner,due_wd,depends_on,status,completed_wd
+C01,Cash,Download bank statements for all operating accounts,J. Rivera,1,,Complete,1
+C02,Cash,Post bank fees and interest,J. Rivera,1,C01,Complete,1
+C03,Cash,Bank reconciliations for operating accounts,J. Rivera,2,C02,Complete,2
+C04,Cash,Cash flow reclass review,M. Chen,3,C03,Complete,4
+P01,Accounts payable,Close AP subledger for prior month,A. Patel,1,,Complete,1
+P02,Accounts payable,Book invoice accruals for goods received not invoiced,A. Patel,2,P01,Complete,2
+P03,Accounts payable,Vendor statement reconciliation top 20 vendors,A. Patel,3,P01,Complete,3
+P04,Accounts payable,AP aging review and debit balance cleanup,A. Patel,4,P03,In progress,
+R01,Revenue,Run billing cutoff and unbilled usage report,L. Nguyen,1,,Complete,1
+R02,Revenue,Book unbilled revenue accrual,L. Nguyen,2,R01,Complete,3
+R03,Revenue,Deferred revenue rollforward,L. Nguyen,3,R02,Complete,3
+R04,Revenue,AR aging and bad debt reserve,K. Brooks,3,R01,Complete,4
+R05,Revenue,Revenue flux vs budget and prior month,K. Brooks,4,R03,In progress,
+Y01,Payroll,Payroll accrual for days worked not paid,S. Okafor,2,,Complete,2
+Y02,Payroll,Bonus and commission accrual,S. Okafor,2,,Complete,2
+Y03,Payroll,Benefits and payroll tax reconciliation,S. Okafor,3,Y01,Complete,4
+F01,Fixed assets,Capitalize completed projects from CIP,D. Kim,2,,Complete,2
+F02,Fixed assets,Run depreciation,D. Kim,2,F01,Complete,2
+F03,Fixed assets,Fixed asset rollforward and disposals,D. Kim,3,F02,Not started,
+A01,Accruals and prepaids,Prepaid amortization,M. Chen,2,,Complete,2
+A02,Accruals and prepaids,Professional fees and utilities accrual,M. Chen,2,,Complete,3
+A03,Accruals and prepaids,Accrual reversal review,M. Chen,3,A02,Complete,3
+I01,Intercompany,Intercompany charges and allocations,T. Walsh,2,,Complete,2
+I02,Intercompany,Intercompany balance matching,T. Walsh,3,I01,Not started,
+I03,Intercompany,Elimination entries,T. Walsh,4,I02,Not started,
+G01,Reconciliations,Balance sheet reconciliations high risk accounts,J. Rivera,4,C03,In progress,
+G02,Reconciliations,Suspense and clearing account review,J. Rivera,4,,Complete,4
+G03,Reconciliations,Reconciliation sign off by controller,M. Chen,5,G01,Not started,
+B01,Reporting,Preliminary trial balance,K. Brooks,3,A03,Complete,4
+B02,Reporting,Actual vs budget variance commentary,S. Bandaru,4,B01,In progress,
+B03,Reporting,Management reporting pack and KPIs,S. Bandaru,5,B02,Not started,
+B04,Reporting,Final trial balance and close sign off,M. Chen,5,G03,Not started,
